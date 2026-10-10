@@ -54,23 +54,47 @@
     .unlock-step { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 10px; margin-top: 8px; font-size: 13px; line-height: 1.5; }
     .unlock-step-title { font-weight: bold; color: var(--primary); margin-bottom: 4px; }
 
-    /* 家電子選單專用樣式 (整齊排列) */
+    /* 家電子選單專用樣式 */
     .sub-menu-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin-bottom: 18px; }
     .sub-menu-btn { background: #ffffff; border: 1px solid #cbd5e1; border-radius: 8px; padding: 10px 8px; text-align: center; cursor: pointer; font-weight: bold; font-size: 12px; color: var(--primary); transition: 0.2s; display: flex; align-items: center; justify-content: center; min-height: 42px; box-sizing: border-box; }
     .sub-menu-btn.active, .sub-menu-btn:hover { background: #e0e7ff; color: var(--accent); border-color: var(--accent); }
     .appliance-detail { display: none; }
     .appliance-detail.active { display: block; }
 
-    /* 電器標題：齊頭對齊整理 */
+    /* 電器標題整理 */
     .appliance-header { display: flex; flex-direction: column; align-items: flex-start; border-bottom: 2px solid #e2e8f0; padding-bottom: 8px; margin-bottom: 12px; }
     .appliance-title-main { font-weight: 900; color: var(--accent); font-size: 17px; line-height: 1.2; }
     .appliance-title-sub { font-weight: 600; color: #64748b; font-size: 12px; margin-top: 3px; line-height: 1.2; }
     .appliance-list { padding-left: 0; list-style: none; margin: 0 0 10px 0; font-size: 13px; color: #475569; }
     .appliance-list li { padding: 5px 0; border-bottom: 1px dashed #f1f5f9; }
 
-    /* 所有圖片等比例縮小至適當大小 */
-    .guide-img { max-width: 150px; width: 100%; height: auto; display: block; margin: 12px auto; border-radius: 8px; border: 1px solid #e2e8f0; box-shadow: 0 2px 6px rgba(0,0,0,0.04); }
-    .guide-img-small { max-width: 100px; width: 100%; height: auto; display: block; margin: 8px auto; border-radius: 6px; border: 1px solid #e2e8f0; box-shadow: 0 2px 6px rgba(0,0,0,0.04); }
+    /* 統一所有照片尺寸與比例 */
+    .guide-img {
+      max-width: 260px;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 4 / 3;
+      object-fit: contain;
+      display: block;
+      margin: 14px auto;
+      border-radius: 8px;
+      border: 1px solid #e2e8f0;
+      background: #fafafa;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    .guide-img-small {
+      max-width: 220px;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 4 / 3;
+      object-fit: contain;
+      display: block;
+      margin: 12px auto;
+      border-radius: 8px;
+      border: 1px solid #e2e8f0;
+      background: #fafafa;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
 
     .btn { display: block; width: 100%; padding: 12px; text-align: center; background: var(--accent); color: white; text-decoration: none; border-radius: 8px; font-weight: bold; border: none; cursor: pointer; box-sizing: border-box; margin-top: 10px; font-size: 14px; }
     .btn-map { background: #16a34a; color: white; }
@@ -386,7 +410,7 @@
         <p class="lang-ja rule-desc">レバーを押すと水が流れます。</p>
         <p class="lang-en rule-desc">Push the lever down to flush the toilet.</p>
         <p class="lang-zh rule-desc">按下沖水槓桿即可沖水。</p>
-        <p class="lang-ko rule-desc">레버를 누르면 물이 내려갑니다.</p>
+        <p class="lang-ko rule-desc">레バー를 누르면 물이 내려갑니다.</p>
       </div>
     </div>
 
@@ -506,7 +530,7 @@
       <p class="lang-zh" style="font-size: 13px; color: #64748b; margin-bottom: 12px;">請選擇欲查看的家電設備：</p>
       <p class="lang-ko" style="font-size: 13px; color: #64748b; margin-bottom: 12px;">확인할 가전제품을 선택해 주세요:</p>
 
-      <!-- 家電子選單按鈕（整齊 Grid 排列） -->
+      <!-- 家電子選單按鈕 -->
       <div class="sub-menu-grid">
         <div class="sub-menu-btn active" onclick="openAppliance('app-air', this)">
           <span class="lang-ja">❄️ エアコン</span>
@@ -637,7 +661,7 @@
           <li><strong>切/入:</strong> Power Off/On / 電源開關 / 전원</li>
           <li><strong>スタート/一時停止:</strong> Start/Pause / 啟動/暫停 / 시작/일시정지</li>
           <li><strong>コース:</strong> Cycle/Mode / 模式選擇 / 코스</li>
-          <li><strong>標準:</strong> Standard / 標準 / 표준</li>
+          <li><strong>標準:</strong> Standard / 標準 /標準</li>
           <li><strong>洗い:</strong> Wash / 洗滌 / 세탁</li>
           <li><strong>すすぎ:</strong> Rinse / 沖洗 / 헹굼</li>
           <li><strong>脱水:</strong> Spin / 脫水 / 탈수</li>
@@ -770,7 +794,7 @@
           <span class="lang-ja">HPはこちら</span>
           <span class="lang-en">Official Website</span>
           <span class="lang-zh">官方網站</span>
-          <span class="lang-ko">공식 홈페이지</span>
+          <span class="lang-ko">공式 홈페이지</span>
         </a>
       </div>
     </div>
