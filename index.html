@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+/<!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
@@ -98,6 +98,7 @@
 
     .btn { display: block; width: 100%; padding: 12px; text-align: center; background: var(--accent); color: white; text-decoration: none; border-radius: 8px; font-weight: bold; border: none; cursor: pointer; box-sizing: border-box; margin-top: 10px; font-size: 14px; }
     .btn-map { background: #16a34a; color: white; }
+    .btn-youtube { background: #ff0000; color: white; }
     .btn-x { background: #000000; color: white; }
     .btn-ig { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); color: white; }
     .tel-btn { background: #16a34a; color: white; text-decoration: none; padding: 10px 16px; border-radius: 6px; display: inline-block; font-weight: bold; margin-top: 8px; }
@@ -186,19 +187,19 @@
       <div class="section-title lang-ko">🚶‍♂️ 가장 가까운 역(치카테츠 반도바시역)에서 오시는 길</div>
 
       <p class="lang-ja rule-desc">
-        最寄り駅の地下鉄阪東橋駅から宿泊先までは徒歩3分です。<br>
+        最寄り駅の地下鉄阪東橋駅から宿泊先までは徒歩3分です。（阪東橋駅 A0 出口）<br>
         GoogleMapにて道案内をご覧いただけます。
       </p>
       <p class="lang-en rule-desc">
-        It is a 3-minute walk from the nearest station, Bandobashi Station, to the accommodation.<br>
+        It is a 3-minute walk from the nearest station, Bandobashi Station (Exit A0), to the accommodation.<br>
         You can view directions on Google Maps below.
       </p>
       <p class="lang-zh rule-desc">
-        從最近的地下鐵阪東橋站步行至住宿地點約需 3 分鐘。<br>
+        從最近的地下鐵阪東橋站（A0 出口）步行至住宿地點約需 3 分鐘。<br>
         點擊下方按鈕即可查看 Google Maps 路線導覽。
       </p>
       <p class="lang-ko rule-desc">
-        가장 가까운 치카테츠 반도바시역에서 숙소까지는 도보로 약 3분 소요됩니다.<br>
+        가장 가까운 치카테츠 반도바시역(A0 출구)에서 숙소까지는 도보로 약 3분 소요됩니다.<br>
         아래 버튼을 누르시면 Google 지도에서 길 안내를 확인하실 수 있습니다.
       </p>
 
@@ -207,6 +208,14 @@
         <span class="lang-en">🗺️ Open Directions on Google Maps</span>
         <span class="lang-zh">🗺️ 開啟 Google Maps 路線導覽</span>
         <span class="lang-ko">🗺️ Google 지도에서 길 안내 열기</span>
+      </a>
+
+      <!-- 🎬 YouTube 道順動画按鈕 -->
+      <a href="https://www.youtube.com/" target="_blank" class="btn btn-youtube">
+        <span class="lang-ja">🎬 道順動画を見る (YouTube)</span>
+        <span class="lang-en">🎬 Watch Route Video (YouTube)</span>
+        <span class="lang-zh">🎬 觀看路線影片 (YouTube)</span>
+        <span class="lang-ko">🎬 길 안내 동영상 보기 (YouTube)</span>
       </a>
     </div>
 
@@ -525,6 +534,8 @@
       <div class="section-title lang-zh">7. 家電設備說明</div>
       <div class="section-title lang-ko">7. 가전製品 사용法</div>
       
+     
+
       <p class="lang-ja" style="font-size: 13px; color: #64748b; margin-bottom: 12px;">ご覧になりたい家電を選択してください：</p>
       <p class="lang-en" style="font-size: 13px; color: #64748b; margin-bottom: 12px;">Please select the appliance you want to view:</p>
       <p class="lang-zh" style="font-size: 13px; color: #64748b; margin-bottom: 12px;">請選擇欲查看的家電設備：</p>
@@ -616,10 +627,30 @@
           <li><strong>明るく:</strong> Brighter / 調亮 / 밝게</li>
           <li><strong>暗く:</strong> Dimmer / 調暗 / 어둡게</li>
         </ul>
-        <img src="lighting1.jpg" alt="Lighting Remote 1" class="guide-img-small">
-        <img src="lighting2.jpg" alt="Lighting Remote 2" class="guide-img-small">
-        <img src="lighting3.jpg" alt="Lighting Remote 3" class="guide-img-small">
-        <img src="lighting4.jpg" alt="Lighting Remote 4" class="guide-img-small">
+
+        <!-- 1F 寢室 -->
+        <div style="margin-top: 15px; border-top: 1px dashed #cbd5e1; padding-top: 10px;">
+          <div style="font-weight: bold; font-size: 13px; color: var(--accent);">1F 寝室</div>
+          <span style="font-size: 11px; color: #64748b;">1F Bedroom / 1F 寢室 / 1F 침실</span>
+          <img src="lighting1.jpg" alt="1F 寝室 1" class="guide-img-small">
+          <img src="lighting2.jpg" alt="1F 寝室 2" class="guide-img-small">
+        </div>
+
+        <!-- 2F リビングルーム -->
+        <div style="margin-top: 15px; border-top: 1px dashed #cbd5e1; padding-top: 10px;">
+          <div style="font-weight: bold; font-size: 13px; color: var(--accent);">2F リビングルーム</div>
+          <span style="font-size: 11px; color: #64748b;">2F Living Room / 2F 客廳 / 2F 거실</span>
+          <img src="lighting3.jpg" alt="2F リビングルーム 1" class="guide-img-small">
+          <img src="lighting4.jpg" alt="2F リビングルーム 2" class="guide-img-small">
+        </div>
+
+        <!-- 3F 寢室 -->
+        <div style="margin-top: 15px; border-top: 1px dashed #cbd5e1; padding-top: 10px;">
+          <div style="font-weight: bold; font-size: 13px; color: var(--accent);">3F 寝室1</div>
+          <span style="font-size: 11px; color: #64748b;">3F Bedroom 1 / 3F 寢室1 / 3F 침실 1</span>
+          <img src="lighting5.jpg" alt="3F 寝室1 - 1" class="guide-img-small">
+          <img src="lighting6.jpg" alt="3F 寝室1 - 2" class="guide-img-small">
+        </div>
       </div>
 
       <!-- 3. 電子レンジ -->
@@ -716,6 +747,20 @@
           <div class="appliance-title-sub">TV Remote / 電視遙控器 / TV 리모컨</div>
         </div>
         
+        <!-- 地面電視警警示 -->
+        <p class="lang-ja rule-desc" style="background:#fef2f2; color:#991b1b; padding:8px 12px; border-radius:6px; border-left:3px solid #dc2626; margin-bottom:8px; font-weight:bold;">
+          ※ 当施設では地上波テレビの視聴はできません。
+        </p>
+        <p class="lang-en rule-desc" style="background:#fef2f2; color:#991b1b; padding:8px 12px; border-radius:6px; border-left:3px solid #dc2626; margin-bottom:8px; font-weight:bold;">
+          ※ Terrestrial TV broadcasts are not available at this facility.
+        </p>
+        <p class="lang-zh rule-desc" style="background:#fef2f2; color:#991b1b; padding:8px 12px; border-radius:6px; border-left:3px solid #dc2626; margin-bottom:8px; font-weight:bold;">
+          ※ 本設施無法收看地面電視（無線電視節目）。
+        </p>
+        <p class="lang-ko rule-desc" style="background:#fef2f2; color:#991b1b; padding:8px 12px; border-radius:6px; border-left:3px solid #dc2626; margin-bottom:8px; font-weight:bold;">
+          ※ 본 시설에서는 지상파 TV를 시청하실 수 없습니다.
+        </p>
+
         <p class="lang-ja rule-desc" style="background:#f1f5f9; padding:8px 12px; border-radius:6px; border-left:3px solid var(--accent); margin-bottom:12px;">
           各配信サービスをご利用いただけます。ご視聴につきましては、お客様ご自身のアカウントにてログインをお願いいたします。
         </p>
@@ -757,7 +802,7 @@
         <p class="lang-zh rule-desc">周邊便利商店、超市及推薦景點等詳細資訊，請點擊下方按鈕前往查看。</p>
         <p class="lang-ko rule-desc">주변 편의점, 마트, 추천 장소 등 상세 정보는 아래 버튼을 클릭하여 확인해 주세요.</p>
         
-        <a href="https://newoinc.github.io/guide/?title=板東橋&address=神奈川県横浜市南区高根町1-1-10" target="_blank" class="btn btn-map">
+        <a href="https://newoinc.github.io/guide/?title=阪東橋&address=神奈川県横浜市南区高根町1-1-10" target="_blank" class="btn btn-map">
           <span class="lang-ja">🗺️ 周辺ガイドマップを開く</span>
           <span class="lang-en">🗺️ Open Nearby Guide Map</span>
           <span class="lang-zh">🗺️ 開啟周邊地圖</span>
